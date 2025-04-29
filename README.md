@@ -20,8 +20,6 @@ Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxd
 >
 > [OpenCV](https://github.com/opencv/opencv) == 4.2.0
 >
-> [PCL](https://pointclouds.org/downloads/) == 1.8 for Ubuntu 18.04, and == 1.10 for Ubuntu 20.04
->
 > [Ceres](http://ceres-solver.org/installation.html) >= 1.14
 >
 > [ROS](http://wiki.ros.org/ROS/Installation)
