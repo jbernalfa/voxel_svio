@@ -25,8 +25,6 @@ Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxd
 > [Ceres](http://ceres-solver.org/installation.html) >= 1.14
 >
 > [ROS](http://wiki.ros.org/ROS/Installation)
->
-> [Livox_ROS_Driver](https://github.com/Livox-SDK/livox_ros_driver)
 
 ##### Have Tested On:
 
