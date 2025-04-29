@@ -44,7 +44,7 @@ cd Voxel-SVIO/src
 ### 3. Clone the directory and build
 
 ```bash
-git clone https://github.com/ZikangYuan/sr_livo.git
+git clone https://github.com/ZikangYuan/voxel_svio.git
 cd ..
 catkin_make
 ```
