@@ -46,3 +46,64 @@ git clone https://github.com/ZikangYuan/voxel_svio.git
 cd ..
 catkin_make
 ```
+
+## Run on Public Datasets
+
+Noted:
+
+A. **Please create a folder named "output" before running.** When **Voxel-SVIO** is running, the estimated pose is recorded in real time in the **pose.txt** located in the **output folder**.
+
+B. We store the public datasets on Baidu drive. Chinese users can download the rosbag data of [*TUM_VI*](https://pan.baidu.com/s/1WLhnyq09KMpG4J4McT841Q?pwd=8pen) and [*KAIST*](https://pan.baidu.com/s/1KHkGmQ7nH5Une3VNerLyHQ?pwd=ss9a).
+
+###  1. Run on [*EuRoC*](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets)
+
+Please go to the workspace of **Voxel-SVIO** and type:
+
+```bash
+cd Voxel-SVIO
+source devel/setup.bash
+roslaunch voxel_svio vio_euroc.launch
+```
+
+Then open the terminal in the path of the bag file, and type:
+
+```bash
+rosbag play SEQUENCE_NAME.bag --clock -d 1.0
+```
+
+###  2. Run on [*TUM_VI*](https://cvg.cit.tum.de/data/datasets/visual-inertial-dataset)
+
+Please go to the workspace of **Voxel-SVIO** and type:
+
+```bash
+cd Voxel-SVIO
+source devel/setup.bash
+roslaunch voxel_svio vio_tum_vi.launch
+```
+
+Then open the terminal in the path of the bag file, and type:
+
+```bash
+rosbag play SEQUENCE_NAME.bag --clock -d 1.0
+```
+
+For the TUM_VI dataset, different configuration files are required for the scenarios of **corridor**, **magistrale**, and **room**. Please select the appropriate configuration file according to the sequence being processed.
+
+###  3. Run on [*KAIST*](https://sites.google.com/view/complex-urban-dataset)
+
+Please go to the workspace of **Voxel-SVIO** and type:
+
+```bash
+cd Voxel-SVIO
+source devel/setup.bash
+roslaunch voxel_svio vio_kaist.launch
+```
+
+Then open the terminal in the path of the bag file, and type:
+
+```bash
+rosbag play SEQUENCE_NAME.bag --clock -d 1.0
+```
+
+For the KAIST dataset, the extrinsic parameters of sequences *urban38* and *urban39* differ from other sequences. When processing *urban38* or *urban39*, please use **kaist2.yaml**; for all other sequences, use **kaist.yaml**.
+
