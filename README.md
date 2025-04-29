@@ -18,7 +18,7 @@ Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxd
 > 
 > [Eigen3](http://eigen.tuxfamily.org/index.php?title=Main_Page) >= 3.3.4
 >
-> [OpenCV](https://github.com/opencv/opencv) >= 3.3
+> [OpenCV](https://github.com/opencv/opencv) == 4.2.0
 >
 > [PCL](https://pointclouds.org/downloads/) == 1.8 for Ubuntu 18.04, and == 1.10 for Ubuntu 20.04
 >
