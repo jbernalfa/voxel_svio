@@ -1,0 +1,11 @@
+<launch>
+  <!-- Launch file for velodyne16 VLP-16 LiDAR -->
+
+    <arg name="rviz" default="true" />
+
+    <rosparam command="load" file="$(find voxel_svio)/config/tum_vi_corridor.yaml" />
+
+    <param name="output_path" type="string" value="$(find voxel_svio)/output"/>
+    <node pkg="voxel_svio" type="vio_node" name="vio_node" output="screen" /> 
+
+</launch>
