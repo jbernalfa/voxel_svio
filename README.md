@@ -33,3 +33,18 @@ Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxd
 | OS    | GCC  | Cmake | Eigen3 | OpenCV | Ceres |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | Ubuntu 20.04 | 9.4.0  | 3.16.3 | 3.3.7 | 4.2.0 | 1.14 |
+
+### 2. Create ROS workspace
+
+```bash
+mkdir -p ~/Voxel-SVIO/src
+cd Voxel-SVIO/src
+```
+
+### 3. Clone the directory and build
+
+```bash
+git clone https://github.com/ZikangYuan/sr_livo.git
+cd ..
+catkin_make
+```
