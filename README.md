@@ -105,5 +105,8 @@ Then open the terminal in the path of the bag file, and type:
 rosbag play SEQUENCE_NAME.bag --clock -d 1.0
 ```
 
-For the KAIST dataset, the extrinsic parameters of sequences *urban38* and *urban39* differ from other sequences. When processing *urban38* or *urban39*, please use **kaist2.yaml**; for all other sequences, use **kaist.yaml**.
+For the KAIST dataset, the extrinsic parameters of sequences *urban38* and *urban39* differ from other sequences. When processing *urban38* or *urban39*, please use **kaist2.yaml**; for all other sequences, please use **kaist.yaml**.
 
+## Acknowledgments
+
+Thanks for [Open-VINs](https://github.com/rpng/open_vins), [DSO](https://github.com/JakobEngel/dso) and [VINs-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono).
