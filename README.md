@@ -53,7 +53,7 @@ A. **Please create a folder named "output" before running.** When **Voxel-SVIO**
 
 B. We store the public datasets on Baidu drive. Chinese users can download the rosbag data of [*TUM_VI*](https://pan.baidu.com/s/1WLhnyq09KMpG4J4McT841Q?pwd=8pen) and [*KAIST*](https://pan.baidu.com/s/1KHkGmQ7nH5Une3VNerLyHQ?pwd=ss9a).
 
-###  1. Run on [*EuRoC*](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets)
+###  1. Run on [*EuRoC MAV*](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets)
 
 Please go to the workspace of **Voxel-SVIO** and type:
 
